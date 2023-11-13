@@ -1,7 +1,5 @@
 import { NextResponse } from "next/server"
-import jwt from 'jsonwebtoken';
 import { Resend } from 'resend';
-import { EmailTemplate } from "@/app/components/email-template";
 import  { signup_user } from "../signin/add";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
